@@ -16,6 +16,7 @@ import Button from 'Attendify_test_assignment_ChernoK/lib/buttons';
 
 For Live Demo example do the following steps (you need to be in the root of this project):
 ```sh
+npm install
 cd example
 npm install
 npm start
