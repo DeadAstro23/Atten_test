@@ -1,0 +1,227 @@
+/******** Icons ********/
+.icon {
+  position: relative;
+}
+.icon_without-text {
+  margin: 0 !important;
+}
+.icon-circle-success:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iI2ZmZiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMEM0LjQ4IDAgMCA0LjQ4IDAgMTBzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE1LjUyIDAgMTAgMHpNOCAxNWwtNS01IDEuNDEtMS40MUw4IDEyLjE3bDcuNTktNy41OUwxNyA2bC05IDl6Ii8+PC9zdmc+);
+}
+.icon:before {
+  content: "";
+}
+/* colors */
+.button {
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+  -webkit-text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-self: flex-start;
+  /* .button sizes */
+  /* .button width */
+  /* .button rounded */
+  /* .button backgrounds */
+  /* .button disabled */
+}
+.button *,
+.button *::before,
+.button *::after {
+  box-sizing: inherit;
+}
+.button:active,
+.button:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.button:active {
+  margin-top: 1px;
+}
+.button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+.button[type="button"]:-moz-focusring {
+  outline: 0;
+}
+.button__inner-content {
+  vertical-align: middle;
+}
+.button__icon {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+}
+.button__icon_left {
+  margin-right: 8px;
+}
+.button__icon_right {
+  margin-left: 8px;
+}
+.button__icon:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.button__icon_large {
+  width: 16px;
+}
+.button__icon_large:before {
+  background-size: 16px;
+}
+.button__icon_medium {
+  width: 14px;
+}
+.button__icon_medium:before {
+  background-size: 14px;
+}
+.button__icon_small {
+  width: 12px;
+}
+.button__icon_small:before {
+  background-size: 12px;
+}
+.button__icon_xsmall {
+  width: 10px;
+}
+.button__icon_xsmall:before {
+  background-size: 10px;
+}
+.button_size_large {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+}
+.button_size_large.button_width_auto {
+  padding: 0 18px;
+}
+.button_size_large.button_width_square {
+  width: 40px;
+}
+.button_size_medium {
+  width: 100px;
+  height: 36px;
+  font-size: 13px;
+}
+.button_size_medium.button_width_auto {
+  padding: 0 17px;
+}
+.button_size_medium.button_width_square {
+  width: 36px;
+}
+.button_size_small {
+  width: 80px;
+  height: 32px;
+  font-size: 12px;
+}
+.button_size_small.button_width_auto {
+  padding: 0 15px;
+}
+.button_size_small.button_width_square {
+  width: 32px;
+}
+.button_size_xsmall {
+  width: 70px;
+  height: 22px;
+  font-size: 11px;
+}
+.button_size_xsmall.button_width_auto {
+  padding: 0 12px;
+}
+.button_size_xsmall.button_width_square {
+  width: 22px;
+}
+.button_width_auto {
+  width: auto;
+}
+.button_width_full {
+  width: 100%;
+}
+.button_rounded_all {
+  border-radius: 3px;
+}
+.button_bg_brand {
+  background: #13A4E9;
+}
+.button_bg_brand_inverted {
+  border-color: #13A4E9;
+  color: #13A4E9;
+}
+.button_bg_danger {
+  background: #F15A00;
+}
+.button_bg_danger_inverted {
+  border-color: #13A4E9;
+  color: #13A4E9;
+}
+.button_bg_neutral {
+  background: #F5F5F5;
+  border: 2px solid #CCCCCC;
+  color: #000000;
+}
+.button_bg_neutral_inverted {
+  border-color: #CCCCCC;
+  color: #000000;
+}
+.button_bg_success {
+  background: #70B837;
+}
+.button_bg_success_inverted {
+  border-color: #70B837;
+  color: #70B837;
+}
+.button_bg_warning {
+  background: #E59800;
+}
+.button_bg_warning_inverted {
+  border-color: #E59800;
+  color: #E59800;
+}
+.button_bg_brand:hover,
+.button_bg_danger:hover,
+.button_bg_neutral:hover,
+.button_bg_success:hover,
+.button_bg_warning:hover,
+.button_bg_brand:focus,
+.button_bg_danger:focus,
+.button_bg_neutral:focus,
+.button_bg_success:focus,
+.button_bg_warning:focus {
+  opacity: .7;
+}
+.button_bg_brand_inverted,
+.button_bg_danger_inverted,
+.button_bg_neutral_inverted,
+.button_bg_success_inverted,
+.button_bg_warning_inverted {
+  background-color: #FFFFFF;
+  border-width: 2px;
+  border-style: solid;
+}
+.button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+.button_no-paddings {
+  padding: 0 !important;
+}

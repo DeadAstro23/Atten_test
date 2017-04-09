@@ -1,0 +1,19 @@
+/******** Icons ********/
+
+.icon {
+  position: relative;
+
+  &_without-text {
+    margin: 0 !important;
+  }
+
+  &-circle-success {
+    &:before {
+      background-image: url('../images/icons/icon-check-circle.svg');
+    }
+  }
+
+  &:before {
+    content: "";
+  }
+}

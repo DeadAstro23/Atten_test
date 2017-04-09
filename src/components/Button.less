@@ -1,0 +1,269 @@
+@import "../assets/styles/icons";
+@import "../assets/styles/palette";
+
+.button {
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  -webkit-text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  touch-action: manipulation;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  //so as not to make buttons be fullwidth inside flex-container
+  align-self: flex-start;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    -moz-outline-style: none;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  &[type="button"]:-moz-focusring {
+    outline: 0;
+  }
+
+  &__inner-content {
+    vertical-align: middle;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
+
+    &_left {
+      margin-right: 8px;
+    }
+
+    &_right {
+      margin-left: 8px;
+    }
+
+    &:before {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      content: "";
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    &_large {
+      width: 16px;
+
+      &:before {
+        background-size: 16px;
+      }
+    }
+
+    &_medium {
+      width: 14px;
+
+      &:before {
+        background-size: 14px;
+      }
+    }
+
+    &_small {
+      width: 12px;
+
+      &:before {
+        background-size: 12px;
+      }
+    }
+
+    &_xsmall {
+      width: 10px;
+
+      &:before {
+        background-size: 10px;
+      }
+    }
+  }
+
+  /* .button sizes */
+
+  &_size {
+    &_large {
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+
+      &.button_width_auto {
+        padding: 0 18px;
+      }
+
+      &.button_width_square {
+        width: 40px;
+      }
+    }
+
+    &_medium {
+      width: 100px;
+      height: 36px;
+      font-size: 13px;
+
+      &.button_width_auto {
+        padding: 0 17px;
+      }
+
+      &.button_width_square {
+        width: 36px;
+      }
+    }
+
+    &_small {
+      width: 80px;
+      height: 32px;
+      font-size: 12px;
+
+      &.button_width_auto {
+        padding: 0 15px;
+      }
+
+      &.button_width_square {
+        width: 32px;
+      }
+    }
+
+    &_xsmall {
+      width: 70px;
+      height: 22px;
+      font-size: 11px;
+
+      &.button_width_auto {
+        padding: 0 12px;
+      }
+
+      &.button_width_square {
+        width: 22px;
+      }
+    }
+  }
+
+  /* .button width */
+
+  &_width {
+
+    &_predefined {
+    }
+
+    &_auto {
+      width: auto;
+    }
+
+    &_full {
+      width: 100%;
+    }
+  }
+
+  /* .button rounded */
+
+  &_rounded_all {
+    border-radius: 3px;
+  }
+
+
+  /* .button backgrounds */
+
+  &_bg_brand {
+    background: @brand;
+
+    &_inverted {
+      border-color: @brand;
+      color: @brand;
+    }
+  }
+
+  &_bg_danger {
+    background: @danger;
+
+    &_inverted {
+      border-color: @brand;
+      color: @brand;
+    }
+  }
+
+  &_bg_neutral {
+    background: @neutral;
+    border: 2px solid @neutral_inverted;
+    color: #000000;
+
+    &_inverted {
+      border-color: @neutral_inverted;
+      color: #000000;
+    }
+  }
+
+  &_bg_success {
+    background: @success;
+
+    &_inverted {
+      border-color: @success;
+      color: @success;
+    }
+  }
+
+  &_bg_warning {
+    background: @warning;
+
+    &_inverted {
+      border-color: @warning;
+      color: @warning;
+    }
+  }
+
+  &_bg_brand, &_bg_danger, &_bg_neutral, &_bg_success, &_bg_warning {
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+
+    &_inverted {
+      background-color: #FFFFFF;
+      border-width: 2px;
+      border-style: solid;
+    }
+  }
+
+
+  /* .button disabled */
+  &:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+  }
+
+  &_no-paddings {
+    padding: 0 !important;
+  }
+
+}
